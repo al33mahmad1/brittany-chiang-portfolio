@@ -85,3 +85,9 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
 | Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
 | Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+
+Installed zip folder to clone repository. (tried github desktop and git clone through terminal but did not work for me)
+delete yarn.lock file
+Run npm install -g gatsby-cli
+npm install --force (ensure that you stable internet connection)
+npm start --> project start on localhost port 8000

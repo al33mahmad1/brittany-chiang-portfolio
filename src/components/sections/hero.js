@@ -60,28 +60,25 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const two = <h2 className="big-heading">Aleem Ahmad.</h2>;
+  const three = <h3 className="big-heading">I transform ideas into dynamic web experiences.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
+        I’m a software engineer with years of expertise in web development and crafting custom web
+        solutions. Whether you need a sleek website, a robust e-commerce platform, or a tailored web
+        application, I’m committed to delivering high-quality, user-centric solutions that drive
+        your success. Let's create something amazing together.
       </p>
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="mailto:aleemahmada107@gmail.com?subject=Inquiry%20from%20Portfolio&body=Hello%20Aleem,"
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      Get In Touch!
     </a>
   );
 
