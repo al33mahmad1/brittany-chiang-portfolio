@@ -45,6 +45,39 @@ const StyledText = styled.div`
       }
     }
   }
+
+  ul.company-list {
+    display: grid;
+    grid-template-columns: repeat(1);
+    grid-gap: 0 10px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
+
+      &:before {
+        content: '▹';
+        position: absolute;
+        left: 0;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        line-height: 12px;
+      }
+
+      a {
+        color: var(--green);
+        text-decoration: none;
+        text-underline-offset: 3px;
+      }
+    }
+  }
 `;
 const StyledPic = styled.div`
   position: relative;
@@ -125,7 +158,16 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'PHP',
+    'Laravel',
+    'Vue.js',
+    'JavaScript (ES6+)',
+    'Shadcn',
+    'JQuery',
+    'Tailwind CSS',
+    'Git & GitHub',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,30 +177,65 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
+              I’ve always been amazed by how much tech can change the world around us. I still
+              remember when my dad got me my first computer, I spent forever just trying to find the
+              Start button! That little bit of curiosity pulled me into the world of the Internet,
+              and I’ve been hooked ever since.
+              {/* I’ve always been fascinated by how technology can shape the real world. I still 
+              remember the first computer my dad bought for me. I spent hours searching for the 
+              Start button. That small spark of curiosity led me into the world of the Internet, 
+              and I’ve never looked back. */}
+              {/* Hello! My name is Brittany and I enjoy creating things that live on the internet. My
               interest in web development started back in 2012 when I decided to try editing custom
               Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              about HTML &amp; CSS! */}
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
+              I started freelancing while I was studying Computer Science at{' '}
+              <a href="https://pucit.edu.pk/"> PUCIT</a> between{' '}
+              <span className="overline">2016 and 2020</span>.
+              {/* I starting freelancing when I was completing my Computer Science degree from 
+              <a href="https://pucit.edu.pk/">PUCIT | 2016 - 2020</a>.  */}
+              {/* Fast-forward to today, and I’ve had the privilege of working at{' '}
               <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
               <a href="https://starry.com/">a start-up</a>,{' '}
               <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
               <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
               main focus these days is building accessible, inclusive products and digital
               experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              clients. */}
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Fast-forward to today learning never stopped and with over 7+ years of expertise in
+              web development, I specialize in crafting high-quality, tailored web solutions that
+              make a real impact.
+            </p>
+
+            <p>
+              During that time, I’ve had the privilege of working with:
+              <br />
+              <ul className="company-list">
+                <li>
+                  <a href="https://www.linkedin.com/company/givalycares/">Givaly</a> - A platform
+                  focused on community engagement and facilitating neighborhood projects where I was
+                  working on there web platform.
+                  <br />
+                </li>
+                <li>
+                  <a href="https://www.upwork.com/freelancers/~018ea08083a4a8aaf7">
+                    Upwork Clients
+                  </a>{' '}
+                  - Various clients on Upwork for custom web solutions.
+                  <br />
+                </li>
+                <li>
+                  <a href="https://www.siteascend.com/">Siteascend</a> – Where I’ve been serving as
+                  an IT Consultant and Project Manager for their Demand Generation Platform for over
+                  three years.
+                </li>
+              </ul>
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

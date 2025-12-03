@@ -65,17 +65,23 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software engineer with years of expertise in web development and crafting custom web
+        {/* I’m a software engineer with years of expertise in web development and crafting custom web
         solutions. Whether you need a sleek website, a robust e-commerce platform, or a tailored web
         application, I’m committed to delivering high-quality, user-centric solutions that drive
-        your success. Let's create something amazing together.
+        your success. Let's create something amazing together. */}
+        I’m a software engineer with 7+ years of expertise in crafting high-quality, tailored web
+        solutions. Whether it’s a fast, responsive website, a robust e-commerce store, or a complex
+        web application, my focus is on building user-friendly platforms that drive measurable
+        business results.
+        {/* I’ve successfully delivered 40+ projects for startups, agencies, and enterprises—always on time, with clear communication and long-term reliability. */}
       </p>
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="mailto:aleemahmada107@gmail.com?subject=Inquiry%20from%20Portfolio&body=Hello%20Aleem,"
+      href="https://www.upwork.com/freelancers/~018ea08083a4a8aaf7"
+      // href="mailto:aleemahmada107@gmail.com?subject=Inquiry%20from%20Portfolio&body=Hello%20Aleem,"
       target="_blank"
       rel="noreferrer">
       Get In Touch!
